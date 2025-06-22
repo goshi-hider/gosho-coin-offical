@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Validation</title>
+</head>
+<body>
+  <h1>Enter Code to Remove Marker</h1>
+  <form onsubmit="return validateCode()">
+    <input type="text" id="inputCode" required pattern="[A-Z][0-9]{4}"><br><br>
+    <label>Upload 2 images:</label>
+    <input type="file" id="checkImages" accept="image/*" multiple required><br><br>
+    <button type="submit">Validate and Remove Marker</button>
+  </form>
+
+  <script src="main_validate.js"></script>
+</body>
+</html>
